@@ -1,157 +1,167 @@
 ---
-title: "Datasheet for 'A dataset'"
-subtitle: "My subtitle if needed"
+title: "Datasheet for 'BI Students Career Hopefulness and Outlooks for the Future'"
+subtitle: "Response Data from Survey"
 author: 
-  - First author
-  - Another author
-thanks: "Code and data are available at: LINK."
+  - Bella MacLean
+thanks: "Code and data are available at: https://github.com/Bellamaclean7/BI-Students-Career-Hopefulness-and-Outlooks-for-the-Future."
 date: "`r Sys.time()`"
 date-format: "D MMMM YYYY"
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "This dataset encompasses a comprehensive collection of survey responses gathered from students enrolled in the Bachelor of Information (BI) program at the University of Toronto. The survey, conducted in March 2024, aimed to capture a wide array of perspectives regarding students' career aspirations, their expectations about post-graduation employment, and their perceptions of how well the BI program prepares them for future careers in the information sector. The survey was created by the the research team, Bella Maclean, Marcin Jaczynski, Finn Karol, and Sofia Sellitto using Google Forms. This dataset is intended for use by researchers and faculty members interested in exploring academic program outcomes, student career preparedness, and the alignment between the BI program and students level of satisfaction related to careeer hopefulness."
 format: pdf
 number-sections: true
-bibliography: references.bib
 ---
-
-Extract of the questions from @gebru2021datasheets.
-
 
 **Motivation**
 
 1. *For what purpose was the dataset created? Was there a specific task in mind? Was there a specific gap that needed to be filled? Please provide a description.*
-    - The dataset was created to enable analysis of Australian politicians. We were unable to find a publicly available dataset in a structured format that had the biographical and political information on Australian politicians that was needed for modelling.
+The purpose of this dataset was to prompt an analysis is rooted in the context of the Bachelor of Information (BI) program at the University of Toronto, and seeks to unravel the intricate web of factors influencing the hopes and expectations of BI students regarding their future careers. This exploration is motivated by an understanding that the aspirations and outlooks of these future information professionals are not just personal ambitions but are also indicators of the evolving BI program and its effectiveness to prepare students for the professional world.
 2. *Who created the dataset (for example, which team, research group) and on behalf of which entity (for example, company, institution, organization)?*
-    - TBD
+This dataset was created by a group of Bachelor of Information students at the University of Toronto as part of a course project in the course INF412H1: Data Analytics.
 3. *Who funded the creation of the dataset? If there is an associated grant, please provide the name of the grantor and the grant name and number.*
-    - TBD
-4. *Any other comments?*
-    - TBD
+This dataset is not funded
 
 **Composition**
 
 1. *What do the instances that comprise the dataset represent (for example, documents, photos, people, countries)? Are there multiple types of instances (for example, movies, users, and ratings; people and interactions between them; nodes and edges)? Please provide a description.*
-	- TBD
+The instances in the BI Students Career Hopefulness and Outlooks for the Future Dataset Dataset represent individual responses from students enrolled in the BI program at the University of Toronto. Each instance corresponds to a single respondent's answers to a series of survey questions about their demographics, academic experience, career aspirations, expected outcomes following graduation, and their perspectives on their preparedness for the future.
 2. *How many instances are there in total (of each type, if appropriate)?*
-	- TBD
+The dataset does not contain multiple types of instances; rather, it focuses solely on the survey respondents and their answers to the questions posed. 
 3. *Does the dataset contain all possible instances or is it a sample (not necessarily random) of instances from a larger set? If the dataset is a sample, then what is the larger set? Is the sample representative of the larger set (for example, geographic coverage)? If so, please describe how this representativeness was validated/verified. If it is not representative of the larger set, please describe why not (for example, to cover a more diverse range of instances, because instances were withheld or unavailable).*
-	- TBD
+The dataset is a sample of instances from a larger set, where the larger set comprises all students currently enrolled in the Bachelor of Information (BI) program at the University of Toronto. Given that the dataset is based on responses to a survey distributed among BI students, it captures only those who chose to participate, and thus, it may not include the entire student body.
+This sample is not necessarily random as participation in the survey was voluntary, and the distribution method relied on online platforms accessible to BI students, such as university emails, social media groups related to BI, and online forums. While efforts were made to reach as many students as possible to ensure the sample's representativeness, the dataset's representativeness of the larger BI student population could be influenced by various factors, including response bias (where those with strong opinions might be more inclined to respond) and accessibility (students who are less active on the platforms used for distribution might have been less likely to participate).
 4. *What data does each instance consist of? "Raw" data (for example, unprocessed text or images) or features? In either case, please provide a description.*
-	- TBD
+Each instance in the dataset consists of structured responses to a survey, which can be considered as "features". These features are derived from the survey questions and encompass both quantitative and qualitative data types. 
 5. *Is there a label or target associated with each instance? If so, please provide a description.*
-	- TBD
+There is not a singular label or target variable explicitly associated with each instance. The dataset primarily collects multifaceted survey responses from Bachelor of Information (BI) program students at the University of Toronto regarding their demographics, academic experiences, career aspirations, and perspectives on preparedness for their future careers.
 6. *Is any information missing from individual instances? If so, please provide a description, explaining why this information is missing (for example, because it was unavailable). This does not include intentionally removed information, but might include, for example, redacted text.*
-	- TBD
+There is one instance where some information is missing. Some survey questions were optional, allowing respondents to skip questions they did not wish to answer.
 7. *Are relationships between individual instances made explicit (for example, users' movie ratings, social network links)? If so, please describe how these relationships are made explicit.*
-	- TBD
+Relationships between individual instances (i.e., survey responses) are not made explicit. Each instance is independent, representing a single respondent's answers to the survey questions without direct links or references to other respondents or external data points.
 8. *Are there recommended data splits (for example, training, development/validation, testing)? If so, please provide a description of these splits, explaining the rationale behind them.*
-	- TBD
+For the Bachelor of Information (BI) Program Career Expectations Dataset, there are no recommended data splits
 9. *Are there any errors, sources of noise, or redundancies in the dataset? If so, please provide a description.*
-	- TBD
+Questions that allow for free-text responses, such as "What city are you from?" or "Please feel free to add any other thoughts you have regarding the BI Program," can introduce variability and noise due to spelling errors, varied use of language, and subjective interpretations.
+Instances where respondents chose not to answer certain questions (either because the information was unavailable to them or they preferred not to disclose it) can lead to missing data.
 10. *Is the dataset self-contained, or does it link to or otherwise rely on external resources (for example, websites, tweets, other datasets)? If it links to or relies on external resources, a) are there guarantees that they will exist, and remain constant, over time; b) are there official archival versions of the complete dataset (that is, including the external resources as they existed at the time the dataset was created); c) are there any restrictions (for example, licenses, fees) associated with any of the external resources that might apply to a dataset consumer? Please provide descriptions of all external resources and any restrictions associated with them, as well as links or other access points, as appropriate.*
-	- TBD
+The BI Students Career Hopefulness and Outlooks for the Future Dataset is self-contained and does not rely on external resources for its core content. 
 11. *Does the dataset contain data that might be considered confidential (for example, data that is protected by legal privilege or by doctor-patient confidentiality, data that includes the content of individuals' non-public communications)? If so, please provide a description.*
-	- TBD
+The survey did collect personal information from respondents, such as their age, city of origin, GPA, and career aspirations, which can be sensitive in nature, and is why all respondents information was conducted anonymously.
 12. *Does the dataset contain data that, if viewed directly, might be offensive, insulting, threatening, or might otherwise cause anxiety? If so, please describe why.*
-	- TBD
+The dataset set does not contain and offensive, insulting, threatening, or anxiety inducing data, however, the dataset does include free-text responses in so there's always a possibility of encountering unexpected content in questions like these. 
 13. *Does the dataset identify any sub-populations (for example, by age, gender)? If so, please describe how these subpopulations are identified and provide a description of their respective distributions within the dataset.*
-	- TBD
+The BI Students Career Hopefulness and Outlooks for the Future Dataset includes data that identifies sub-populations by age and international student status, These sub-populations are identified through direct survey questions:
+The BI Students Career Hopefulness and Outlooks for the Future Dataset includes data that identifies sub-populations by age and international student status, as seen in the provided dataset overview. These sub-populations are identified through direct survey questions:
+Age: Respondents are asked about their age, allowing for the identification of sub-populations based on different age groups. This can enable analyses to understand how career expectations and aspirations vary across different age demographics within the BI student population.
+International Student Status: The dataset includes a question on whether the respondent is an international student (Yes/No), creating a sub-population based on the domestic versus international student status. This distinction can provide insights into potentially differing career perspectives, expectations, and challenges faced by domestic and international students.
 14. *Is it possible to identify individuals (that is, one or more natural persons), either directly or indirectly (that is, in combination with other data) from the dataset? If so, please describe how.*
-	- TBD
+The dataset's design for anonymity aims to prevent direct identification, meaning there are no direct personal identifiers like names, email addresses, or student IDs. However, the combination of several indirect identifiers could, particularly in smaller or more closely-knit academic programs, increase the risk of re-identification, especially if an individual has a unique set of characteristics or if the dataset is combined with other available information.
+THis is particularly relevent given the nature of some of the questions that ask for the following:
+- Age
+- City of Origin
+- Field of Interest
+- Year of Program 
 15. *Does the dataset contain data that might be considered sensitive in any way (for example, data that reveals race or ethnic origins, sexual orientations, religious beliefs, political opinions or union memberships, or locations; financial or health data; biometric or genetic data; forms of government identification, such as social security numbers; criminal history)? If so, please provide a description.*
-	- TBD
-16. *Any other comments?*
-	- TBD
+The dataset does not contain any sensitive data.
 
 **Collection process**
 
 1. *How was the data associated with each instance acquired? Was the data directly observable (for example, raw text, movie ratings), reported by subjects (for example, survey responses), or indirectly inferred/derived from other data (for example, part-of-speech tags, model-based guesses for age or language)? If the data was reported by subjects or indirectly inferred/derived from other data, was the data validated/verified? If so, please describe how.*
-	- TBD
+The data in the BI Students Career Hopefulness and Outlooks for the Future Dataset was acquired through survey responses reported the students enrolled in the BI program at the University of Toronto. The data consists of direct responses to a series of questions regarding their academic experiences, career aspirations, perceptions about their future careers, and other related career and academic information.
+The data isn't directly observable or measured by external means but rather relies on the subjective input and self-assessment of the respondents. Data like this undergoes limited validation or verification due to the nature of the information being collected. Respondents provide information based on their perceptions, experiences, and expectations, which inherently cannot be validated in the same way objective data can be.
 2. *What mechanisms or procedures were used to collect the data (for example, hardware apparatuses or sensors, manual human curation, software programs, software APIs)? How were these mechanisms or procedures validated?*
-	- TBD
+The data for the BI Students Career Hopefulness and Outlooks for the Future Dataset was collected through an online survey using Google Forms. The survey was distributed through digital communication channels accessible to the target population including university email lists, social media groups related to the BI program, and online forums where BI students are active.
 3. *If the dataset is a sample from a larger set, what was the sampling strategy (for example, deterministic, probabilistic with specific sampling probabilities)?*
-	- TBD
+The dataset is a sample from the larger set of all students enrolled in the BI program. The dataset is based on Convenience Sampling and Voluntary Response Sampling.
 4. *Who was involved in the data collection process (for example, students, crowdworkers, contractors) and how were they compensated (for example, how much were crowdworkers paid)?*
-	- TBD
+The data collection process involved a group of four students who are conducting the research. The students used Google Forms to create the survey and relied on social media to distribute the survey. No compensation was involved in the data collection process. 
 5. *Over what timeframe was the data collected? Does this timeframe match the creation timeframe of the data associated with the instances (for example, recent crawl of old news articles)? If not, please describe the timeframe in which the data associated with the instances was created.*
-	- TBD
+The dataset from the BI Students Career Hopefulness and Outlooks for the Future Survey includes a "Timestamp" field for each response, which indicates when the data was submitted by each respondent. the survey was first distributed on March 8th, 2024 and was closed on March 25th, 2024.
+The creation timeframe of the data associated with the instances matches the data collection timeframe. This means that the insights, opinions, and information captured in the dataset reflect the respondents' views and circumstances during this specific period. It is possible that if the survey was re-distributed today, answer from respondents maqy look different because instances like hopefulness, outlooks, even more concrete questions like GPA can change on a regular basis. 
 6. *Were any ethical review processes conducted (for example, by an institutional review board)? If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.*
-	- TBD
+Prior to data collection the research team submitted a detailed proposal outlining the study's purpose, methodology, data collection instruments (e.g., survey questions), participant recruitment strategy, and measures to protect confidentiality and informed consent. Other than this the data did not undergo any formal ethical review process. 
 7. *Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (for example, websites)?*
-	- TBD
+The data for the Bachelor of Information (BI) Program Career Expectations Dataset was collected directly from the students enrolled in the BI program at the University of Toronto through the survey. No third parties or other sources were relied on.
 8. *Were the individuals in question notified about the data collection? If so, please describe (or show with screenshots or other information) how notice was provided, and provide a link or other access point to, or otherwise reproduce, the exact language of the notification itself.*
-	- TBD
+Particapants were notified about the data collection with the distribution of the survey. The top of the survey included the following disclaimer: "We are collecting anonymous information from BI students in a project aiming to study factors impacting career-related hopefulness for the future. Please answer the questions as truthfully as you can. Thank you for your participation!" Along with this, particpants were explain the purpose of the research when faced with the survey.
 9. *Did the individuals in question consent to the collection and use of their data? If so, please describe (or show with screenshots or other information) how consent was requested and provided, and provide a link or other access point to, or otherwise reproduce, the exact language to which the individuals consented.*
-	- TBD
+Participation in the study was entirely voluntary, participants could have withdrawed at any time without penalty. By submitting the survey, particpants were giving consent to participate in the research. Particpants were told why the survey was being conducted by and by who. They were also told how long the survey would take.
 10. *If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses? If so, please provide a description, as well as a link or other access point to the mechanism (if appropriate).*
-	- TBD
+Particpants were not provided with a mechanism to revoke their consent to participate in future research.
 11. *Has an analysis of the potential impact of the dataset and its use on data subjects (for example, a data protection impact analysis) been conducted? If so, please provide a description of this analysis, including the outcomes, as well as a link or other access point to any supporting documentation.*
-	- TBD
-12. *Any other comments?*
-	- TBD
+No analysis of the potential impact of the dataset and its use on data subjects (for example, a data protection impact analysis) has been conducted.
 
 **Preprocessing/cleaning/labeling**
 
 1. *Was any preprocessing/cleaning/labeling of the data done (for example, discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section.*
-	- TBD
+No preprocessing/cleaning/labeling has been done to the data at this time.
 2. *Was the "raw" data saved in addition to the preprocessed/cleaned/labeled data (for example, to support unanticipated future uses)? If so, please provide a link or other access point to the "raw" data.*
-	- TBD
+	- N/A
 3. *Is the software that was used to preprocess/clean/label the data available? If so, please provide a link or other access point.*
-	- TBD
+	- N/A
 4. *Any other comments?*
-	- TBD
+	- N/A
 
 **Uses**
 
 1. *Has the dataset been used for any tasks already? If so, please provide a description.*
-	- TBD
+The data set has not yet been used for any task. However, the dataset will be used in the coming weeks with the following objectives: 
+- Provide actionable insights to the Faculty of Information on how to enhance the BI program’s alignment with industry trends and student aspirations.
+- Offer students and prospective students a detailed understanding of the potential career trajectories and outcomes associated with the BI program.
+- Contribute to the broader discourse on the role of higher education in career preparation and the shaping of future information professionals.
+
 2. *Is there a repository that links to any or all papers or systems that use the dataset? If so, please provide a link or other access point.*
-	- TBD
+	- N/A
 3. *What (other) tasks could the dataset be used for?*
-	- TBD
+Career Aspirations and Industry Preferences: Identify the career paths that BI students are inclined towards and the industries they prefer to work in. This will help us understand the alignment between the program’s offerings and the job market's demands, as well as students’ personal interests.
+Expected Salary and Satisfaction: By examining students' expectations regarding their future salaries and their satisfaction with these expectations, this data could gauge the economic aspects of career preparedness and aspirations. This analysis will provide a lens through which to view the practical outcomes of the BI program’s career preparation efforts.
+Program Satisfaction and Preparedness: Assessing students' satisfaction with the BI program and their feelings of preparedness for the future that could offer critical insights into the efficacy of the program’s curriculum, experiential learning opportunities, and career planning resources in meeting students’ professional expectations.
+Hopefulness for the Future: Explore the overall sentiment of hopefulness among BI students concerning their careers. This emotional and psychological dimension will allow us to understand the broader impacts of education on students’ outlooks towards their professional futures.
+
 4. *Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (for example, stereotyping, quality of service issues) or other risks or harms (for example, legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms?*
-	- TBD
+The BI Students Career Hopefulness and Outlooks for the Future Dataset, derived from survey responses, contains rich insights into the career aspirations, academic experiences, and perceptions of preparedness among students currently enrolled in the BI program. As time goes on and new students enter the program while current students leave, the data will become less rich over time because the data will only ever accurately reflect the particpants of the survey during the time at which the participants were enrolled in the BI program and there perspectives at that point in their program progression. If the dataset was to be used in future research then it could lead to wrongful assumptions about BI students because it would not reflect the current student body.  
 5. *Are there tasks for which the dataset should not be used? If so, please provide a description.*
-	- TBD
-6. *Any other comments?*
-	- TBD
+The dataset should not be used to make decisions about individual students. The data reflects aggregate trends and individual perceptions, not detailed assessments of individual capabilities or outlooks.
+While the dataset might offer insights into general trends among BI students, using it to predict individual students' future career success, academic performance, or other personal outcomes without additional, contextual data would be inappropriate and potentially misleading.
+Given the dataset originates from an academic setting and involves personal student information, utilizing it for commercial purposes, such as targeted advertising or selling insights to third parties would be unethical.
+Any analysis that aims to stereotype students based on their responses, such as associating career aspirations or perceived preparedness with inherent qualities of certain groups, should be avoided.
 
 **Distribution**
 
 1. *Will the dataset be distributed to third parties outside of the entity (for example, company, institution, organization) on behalf of which the dataset was created? If so, please provide a description.*
-	- TBD
+There are no plans for distributing the BI Students Career Hopefulness and Outlooks for the Future Dataset to third parties outside of the University of Toronto and the Faculty of Information.
 2. *How will the dataset be distributed (for example, tarball on website, API, GitHub)? Does the dataset have a digital object identifier (DOI)?*
-	- TBD
+The Dataset will be distributed as a .csv file. 
 3. *When will the dataset be distributed?*
-	- TBD
+There is no set date at this point in time for when the dataset will be distributed and if it will be distributed. 
 4. *Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)? If so, please describe this license and/ or ToU, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated with these restrictions.*
-	- TBD
+	- N/A
 5. *Have any third parties imposed IP-based or other restrictions on the data associated with the instances? If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any relevant licensing terms, as well as any fees associated with these restrictions.*
-	- TBD
+	- N/A
 6. *Do any export controls or other regulatory restrictions apply to the dataset or to individual instances? If so, please describe these restrictions, and provide a link or other access point to, or otherwise reproduce, any supporting documentation.*
-	- TBD
-7. *Any other comments?*
-	- TBD
+	- N/A
 
 **Maintenance**
 
 1. *Who will be supporting/hosting/maintaining the dataset?*
-	- TBD
+The research team remains hopeful that after analysis and use of the dataset, the Faculty of Information will take on the responsibility for supporting/hosting/maintaining the dataset in hopes that future students may add to the dataset or the Faculty will take initiative to encourage students to furhter the research in future years so that the Faculty continuously has insights into students hopefulness for the future and their thoughts on the program and their future career aspirations to make informed decisions about the program in years to come.
 2. *How can the owner/curator/manager of the dataset be contacted (for example, email address)?*
-	- TBD
+The owner of the dataset can be contacted via email at bella.maclean@mail.utoronto.ca
 3. *Is there an erratum? If so, please provide a link or other access point.*
-	- TBD
+	- N/A
 4. *Will the dataset be updated (for example, to correct labeling errors, add new instances, delete instances)? If so, please describe how often, by whom, and how updates will be communicated to dataset consumers (for example, mailing list, GitHub)?*
-	- TBD
+At this point in time it is unclear if the dataset will be updated in the future. 
 5. *If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (for example, were the individuals in question told that their data would be retained for a fixed period of time and then deleted)? If so, please describe these limits and explain how they will be enforced.*
-	- TBD
+Participants in the BI Students Career Hopefulness and Outlooks for the Future Survey were not informed about the deletion of their information or the time limit for how long their information would be retained.
 6. *Will older versions of the dataset continue to be supported/hosted/maintained? If so, please describe how. If not, please describe how its obsolescence will be communicated to dataset consumers.*
-	- TBD
+There is no clear management plans for the BI Students Career Hopefulness and Outlooks for the Future Dataset regarding the maintence of older versions of the dataset at this time. Currently, there are no plans to further the dataset and therefore this question is not relvent at this time. 
 7. *If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so? If so, please provide a description. Will these contributions be validated/verified? If so, please describe how. If not, why not? Is there a process for communicating/distributing these contributions to dataset consumers? If so, please provide a description.*
-	- TBD
-8. *Any other comments?*
-	- TBD
+There is currently no mechanism in place for others to extend, augment, build on, or contribute to the BI Students Career Hopefulness and Outlooks for the Future Dataset. However, creating a collaborative environment for dataset enhancement is a future goal of the research team once initial analysis is complete and shared with the Faculty of Information.
+
 
 
 \newpage
 
 # References
+
+Maclean, B., Jaczynski, M., Karol, F., & Sellitto, S. (2024). BI Students Career Hopefulness and Outlooks for the Future Dataset: Response Data from Survey. University of Toronto. https://docs.google.com/spreadsheets/d/1tHJ7shkRERLSvY3fnDP7oEq4KiRtkmtRq9DkLCF4VlY/edit?usp=sharing
+
